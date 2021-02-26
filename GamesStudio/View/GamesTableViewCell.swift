@@ -31,7 +31,7 @@ class GamesTableViewCell: UITableViewCell {
             title.text = viewModel.title
             shortDesc.text = viewModel.shortDescription
             publisher.text = viewModel.publisher
-            thumbNailImage.sd_setImage(with: URL(string: viewModel.thumbnail), placeholderImage: UIImage(named: "placeholder.png"))
+            thumbNailImage.sd_setImage(with: URL(string: viewModel.thumbnail), placeholderImage: UIImage(named: "thumbnail"))
         }
     }
 }

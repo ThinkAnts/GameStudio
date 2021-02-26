@@ -11,8 +11,11 @@ import SDWebImage
 class ScreenShotsCollectionViewCell: UICollectionViewCell {
 
     static let identifier = "Screenshotscell"
+    
     @IBOutlet weak var screenShotImageView: UIImageView!
     var gameScreenShotModel: GameScreenShots?
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +25,6 @@ class ScreenShotsCollectionViewCell: UICollectionViewCell {
     }
 
     func setSCreenShots() {
-        screenShotImageView.sd_setImage(with: URL(string: gameScreenShotModel?.image ?? ""), placeholderImage: UIImage(named: "placeholder.png"))
+        screenShotImageView.sd_setImage(with: URL(string: gameScreenShotModel?.image ?? ""), placeholderImage: UIImage(named: "thumbnail"))
     }
 }

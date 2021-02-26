@@ -99,8 +99,6 @@ extension GameDetailViewController:UICollectionViewDataSource {
         cell.setSCreenShots()
         return cell
     }
-    
-    
 }
 
 extension GameDetailViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
